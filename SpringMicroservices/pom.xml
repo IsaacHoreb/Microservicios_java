@@ -19,6 +19,11 @@
     <name>SpringMicroservices</name>
     <packaging>pom</packaging> <!--Para decirle que es un proyecto padre-->
 
+    <!--Creamos modules para configurar mi hijos como modulos-->
+    <modules>
+        <module>microservice.gateway</module>
+    </modules>
+clear
     <!--Configuramos la version de java a 17-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
