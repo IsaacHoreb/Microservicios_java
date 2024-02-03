@@ -23,6 +23,7 @@
         <module>microservice.gateway</module>
         <module>microservice-eureka</module>
         <module>microservice-config</module>
+        <module>microservice.student</module>
     </modules>
 
     <!--Configuramos la version de java a 17-->
