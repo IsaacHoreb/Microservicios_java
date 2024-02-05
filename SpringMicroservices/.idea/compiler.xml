@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservice.course" />
         <module name="microservice.student" />
         <module name="microservice-eureka" />
         <module name="microservice.gateway" />
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="microservice-config" options="-parameters" />
       <module name="microservice-eureka" options="-parameters" />
+      <module name="microservice.course" options="-parameters" />
       <module name="microservice.gateway" options="-parameters" />
       <module name="microservice.student" options="-parameters" />
     </option>

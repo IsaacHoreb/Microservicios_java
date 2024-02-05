@@ -24,6 +24,7 @@
         <module>microservice-eureka</module>
         <module>microservice-config</module>
         <module>microservice.student</module>
+        <module>microservice.course</module>
     </modules>
 
     <!--Configuramos la version de java a 17-->
