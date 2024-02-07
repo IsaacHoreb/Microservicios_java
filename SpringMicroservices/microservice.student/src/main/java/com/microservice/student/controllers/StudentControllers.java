@@ -30,4 +30,10 @@ public class StudentControllers {
         return ResponseEntity.ok(studentService.findById(id));
     }
 
+    //Para conectarme al otro controlador(course) por endPoint
+    @GetMapping("/search-by-course/{idCourse}")
+    public ResponseEntity<?> findByIdCourse(@PathVariable("idCourse") Long idCourse) {
+        return ResponseEntity.ok(studentService.findByIdCourse(idCourse));
+    }
+
 }
