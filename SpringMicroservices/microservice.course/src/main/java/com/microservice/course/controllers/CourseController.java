@@ -30,4 +30,10 @@ public class CourseController {
         return ResponseEntity.ok(courseService.findById(id));
     }
 
+    //endPoint que sera util para accerder a la respuesta personalizada
+    @GetMapping("/search-student/{idCourse}")
+    public ResponseEntity<?> findStudentsByIdCourse(@PathVariable("idCourse") Long idCourse) {
+        return ResponseEntity.ok(courseService.findStudentsByIdCourse(idCourse));
+    }
+
 }
