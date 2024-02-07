@@ -16,12 +16,12 @@ public class CourseController {
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public void saveCourse(@RequestBody Course course) {
+    public void saveStudent(@RequestBody Course course) {
         courseService.save(course);
     }
 
     @GetMapping("/all")
-    public ResponseEntity<?> findByAllCourse() {
+    public ResponseEntity<?> findByAllStudent() {
         return ResponseEntity.ok(courseService.findAll());
     }
 
