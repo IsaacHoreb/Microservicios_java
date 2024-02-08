@@ -7,12 +7,12 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/coursesDb
-    username: postgresql
+    username: postgres
     password: 1234
   jpa:
     hibernate:
-      ddl-auto: postgresql
-    database: mysql
+      ddl-auto: create
+    database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   #Configuracion provicional debido a que no se configura aun el microservicio-config
   config:

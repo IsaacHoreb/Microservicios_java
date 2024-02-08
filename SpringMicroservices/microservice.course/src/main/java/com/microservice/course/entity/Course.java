@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table
-@Entity(name = "courses")
+@Entity
+@Table(name = "courses")
 public class Course {
 
     @Id
@@ -19,8 +19,6 @@ public class Course {
     private Long id;
     private String name;
     private String teacher;
-
-
 
 
 }
